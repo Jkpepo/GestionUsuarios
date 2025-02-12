@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Información de perfil</h1>
+
+   
+        <h2>Hola, {{ user.first_name }} {{ user.last_name }}</h2>
+        <h3>Hola, {{ user.username }}</h3>
+        <p>Correo electrónico: {{ user.email }}</p>
+   
+  
+
+{% endblock %}

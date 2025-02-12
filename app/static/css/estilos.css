@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    
+    margin: 20px;
+}
+.contenedor_tabla{
+
+    border:#880376 solid 3px;
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.table td, .table th {
+    font-size: 14px; /* Ajusta el tamaño según lo necesites */
+}
+
+
+
+.btn-success {
+    border-color: aqua; /* Cambiar color específico */
+    color: blue;
+    border-radius: 10px;
+    background-color: black; /* Cambia el color de fondo */
+    
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:100px;
+    padding: 20px ;
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    height:540px;
+    width: 100%;
+}
+
+.card{
+
+    padding: 30px 40px;
+    height: 100%;
+    width: 420px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color:white;
+    border-radius: 10px;
+    
+    
+ 
+}
+.card h1{
+
+    font-size: 36px;
+    text-align: center;                                                          
+}
+.input-box{
+    width: 100%;
+    height: 50px;
+   
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color:white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.regis {
+        
+  
+    width: 40px;
+    height: 40px;  /* Mantén la altura que desees */
+    margin-left: -10px;
+    margin-bottom: 40px;      /* Elimina el margen predeterminado */
+    
+    /* Si quieres que el contenedor se alinee al fondo de su contenedor padre */
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido al final del contenedor */
+    
+
+    /* Si deseas mover el contenedor hacia arriba desde su posición normal */
+    margin-top: -35px; /* Ajusta este valor según lo necesites */
+}
+.imagen{
+
+    width: 60px;
+    height: 60px;
+    transform: rotateZ(180deg);
+}
+
+.regis a{
+    color:white;
+    text-decoration: none;
+}
+.regis a:hover{
+    text-decoration: underline;
+}
+.btn-login{
+
+    
+    color: gray;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.473);
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+
+}
+.btn-login:hover{
+    
+    border: 4px solid rgba(255, 255, 255, 0.719);
+
+}
+.create-count  {
+
+    color:white;
+    text-decoration:none;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+ .create-count a{
+
+    color: black;
+    font-weight: 600;
+}
+.create-count a:hover{
+
+    text-decoration: underline;
+}
+
+
+.navbar-expand-lg {
+   
+ 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  
+}
+.navbar-nav{
+    margin-bottom: 20px;
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0,0,0, .20);
+    
+    width: 100%;
+}
+.btn-link{
+    
+   
+    margin-top: 15px;
+}
+a {
+    text-decoration: none;
+    
+}
+
+#namer{
+
+    color: aqua;
+    background-color: black;
+} 
+/* Estilo para la alerta flotante */
+/* .errores{
+    color: aliceblue;
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+   } */
+
+.card-body{
+    background:rgb(213, 190, 235);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    width: 100%;
+    
+}
+
+.contenedor-empleados{
+
+    width: 500px;
+    height: 500px;
+    
+    margin: auto;
+}
+
+
+.boton_registro_usuario{
+
+    border-radius: 10px;
+    width: 100%;
+}
+
+.imagen_usuario{
+    border: salmon solid 2px;
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto 20px; /* Centra la imagen y añade margen inferior */
+}
+
+
+
+article p,li{
+   
+
+    margin: 20px;
+  
+    
+    
+
+}
+
+article ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.perfil-usuario {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(137, 21, 173, 0.5);
+    padding: 30px;
+    margin-bottom: 20px;
+    
+}
+
+/* Encabezado del perfil */
+.perfil-header {
+    text-align: center;
+    margin-bottom: 80px;
+    background:linear-gradient(#880376,#ffffff); 
+    
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 10px;
+   
+}
+
+.nombre-usuario {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.imagen-usuario {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ede8e4;
+    object-fit: cover;
+}
+
+/* Secciones de información */
+.seccion-info {
+    
+    margin-bottom: 25px;
+    
+    
+    
+}
+
+.titulo-seccion {
+    font-size: 1.8rem;
+    color: #880376;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d400ff;
+    padding-bottom: 5px;
+}
+
+
+.info-item p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Listas */
+.lista-cursos, .lista-empresa {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-cursos li, .lista-empresa li{
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+/* Mensaje de no empresa */
+.sin-empresa {
+    font-style: italic;
+    color: #888;
+}
+
+/* Efectos de hover */
+.lista-cursos li:hover, .lista-empresa li:hover {
+    background: #dee9eb;
+    transition: background 0.3s ease;}
+
+    strong{
+
+        font-weight: 500px;
+        color: #000000;
+    }
+    h2{
+        text-align: center;
+    }
+
+    .form-group{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 20px;
+    }
+
+
+
+.imagen_hero{
+   
+    width: 100%;
+}
+
+.banner_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../img/gestion.webp");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 2px rebeccapurple;
+    width: 100%;
+    height: 500px;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+}
+
+.banner_info::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute; /* Posiciona correctamente la superposición */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que la superposición esté encima del fondo pero debajo del contenido */
+}
+.banner__title {
+    color: #880376;
+    text-shadow: 
+        2px 2px 0px #fff,  /* Borde blanco en la parte inferior derecha */
+        -2px -2px 0px #fff, /* Borde blanco en la parte superior izquierda */
+        2px -2px 0px #fff,  /* Borde blanco en la parte superior derecha */
+        -2px 2px 0px #fff;  /* Borde blanco en la parte inferior izquierda */
+    z-index: 2; /* Asegura que esté por encima de la superposición */
+    position: absolute; /* Posiciona el título dentro del banner */
+    top: 50%; /* Centra verticalmente el título */
+    left: 50%; /* Centra horizontalmente el título */
+    transform: translate(-50%, -50%); /* Ajuste fino para centrar el título */
+    font-size: 5rem; /* Puedes ajustar el tamaño de la fuente según lo que necesites */
+    font-weight: bold; /* Opcional: cambia el peso de la fuente */
+}

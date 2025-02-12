@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+<article class="perfil-usuario">
+    <div class="perfil-header">
+        <h1 class="nombre-usuario">{{ usuario.nombres }} {{ usuario.apellidos }}</h1>
+        <img class="imagen-usuario" src="{{ usuario.imagen.url }}" alt="Imagen de {{ usuario.nombres }}">
+    </div>
+
+    <div class="seccion-info">
+        <h2 class="titulo-seccion">Información</h2>
+        <div class="info-item">
+            <p><strong>Fecha de nacimiento:</strong> {{ usuario.fecha_nacimiento }}</p>
+            <p><strong>Edad:</strong> {{ usuario.edad }}</p>
+            <p><strong>Teléfono:</strong> {{ usuario.telefono }}</p>
+            <p><strong>Correo:</strong> {{ usuario.email }}</p>
+            <p><strong>Dirección:</strong> {{ usuario.direccion }}</p>
+            <p><strong>Información académica:</strong> {{ usuario.informacion_academica }}</p>
+            <p><strong>Cargo:</strong> {{ usuario.cargo }}</p>
+        </div>
+    </div>
+
+    <div class="seccion-info">
+        <h2 class="titulo-seccion">Afiliaciones</h2>
+        <div class="info-item">
+            <p><strong>EPS:</strong> {{ usuario.eps }}</p>
+            <p><strong>ARL:</strong> {{ usuario.arl }}</p>
+            <p><strong>Fondo de pensiones:</strong> {{ usuario.pensiones }}</p>
+        </div>
+    </div>
+
+    <div class="seccion-info">
+        <h2 class="titulo-seccion">Información de contacto</h2>
+        <div class="info-item">
+            <p><strong>Nombre de contacto:</strong> {{ usuario.nombre_contacto }}</p>
+            <p><strong>Teléfono:</strong> {{ usuario.telefono_contacto }}</p>
+        </div>
+    </div>
+
+    <div class="seccion-info">
+        <h2 class="titulo-seccion">Exámenes/Cursos</h2>
+        <ul class="lista-cursos">
+            <li><strong>Fecha Examen Médico:</strong> {{ usuario.fecha_examen_medico }}</li>
+            <li><strong>Curso Altura:</strong> {{ usuario.curso_altura }}</li>
+            <li><strong>Curso Espacios Confinados:</strong> {{ usuario.curso_espacios_confinados }}</li>
+        </ul>
+    </div>
+
+    <div class="seccion-info">
+        <h2 class="titulo-seccion">Empresa</h2>
+        {% if empresa %}
+        <ul class="lista-empresa">
+            <li><strong>Nombre de la Empresa:</strong> {{ empresa.nombre }}</li>
+            <li><strong>Teléfono:</strong> {{ empresa.telefono }}</li>
+            <li><strong>Persona de contacto:</strong> {{ empresa.persona_contacto }}</li>
+        </ul>
+        {% else %}
+        <p class="sin-empresa">No hay empresas asociadas.</p>
+        {% endif %}
+    </div>
+</article>
+{% endblock %}
